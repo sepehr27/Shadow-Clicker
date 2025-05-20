@@ -52,9 +52,6 @@ class ClickThread(QThread):
         mouse = MouseController()
         lparam = make_lparam(self.x, self.y) if self.x is not None else None
 
-
-        print(self.click_button)
-
         down_msg, up_msg, key_flag = self.WM_MESSAGES.get(
             self.click_button, self.WM_MESSAGES["left"]
         )
