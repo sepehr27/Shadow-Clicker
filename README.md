@@ -20,10 +20,8 @@ Shadow Clicker is an advanced Windows auto clicker that can click inside any app
 ---
 
 ## Demo
-<div style="display: flex; gap: 10px; align-items: center;">
-  <img src="https://github.com/user-attachments/assets/ce8b4ed8-1537-4694-9fa4-ddecd2031be0" alt="dark-demo" width="500"/>
-  <img src="https://github.com/user-attachments/assets/3ac45739-62e1-4848-9f2b-66c3f19ee4d9" alt="light-demo" width="500"/>
-</div>
+![demo](https://github.com/user-attachments/assets/0a090f05-c99f-4ca0-828f-8512929e664f)
+
 
 
 
