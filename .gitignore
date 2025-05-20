@@ -4,3 +4,8 @@ __pycache__
 __pycache__/*
 */__pycache__/*
 .python-version
+.env
+build
+dist
+icon.ico
+main.spec

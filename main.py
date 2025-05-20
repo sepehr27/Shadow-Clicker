@@ -7,8 +7,10 @@ import win32api
 import win32gui
 from PySide6.QtWidgets import QApplication, QMainWindow
 from PySide6.QtCore import QTimer, QThread, Signal
+from PySide6.QtGui import QIcon
 from ui import Ui_MainWindow
 from clicker import MouseController
+import os
 
 
 def make_lparam(x: int, y: int) -> int:
@@ -97,6 +99,14 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+        self.setWindowTitle("Shadow Clicker")
+
+        if getattr(sys, 'frozen', False):
+            icon_path = os.path.join(sys._MEIPASS, "icon.ico")
+        else:
+            icon_path = os.path.abspath("icon.ico")
+            
+        self.setWindowIcon(QIcon(icon_path))
         self.ui.pushButton_setHotkey.setEnabled(False)
 
         self.click_thread = None
