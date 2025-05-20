@@ -31,7 +31,7 @@ Shadow Clicker is an advanced Windows auto clicker that can click inside any app
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Bllare/Shadow-Clicker.git
+   git clone https://github.com/sepehr27/Shadow-Clicker.git
    cd Shadow-Clicker
    pip install -r requirements.txt
    python main.py
