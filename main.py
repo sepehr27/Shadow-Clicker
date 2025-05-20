@@ -7,7 +7,7 @@ import win32api
 import win32gui
 from PySide6.QtWidgets import QApplication, QMainWindow
 from PySide6.QtCore import QTimer, QThread, Signal
-from ui_main import Ui_MainWindow
+from ui import Ui_MainWindow
 from clicker import MouseController
 
 
@@ -99,6 +99,8 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+
+        self.ui.pushButton_setHotkey.setEnabled(False)
 
         self.click_thread = None
         self.click_count = 0
